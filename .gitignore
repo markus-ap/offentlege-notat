@@ -1,0 +1,28 @@
+# Jekyll build output
+_site/
+
+# Jekyll cache
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby/Bundler
+.bundle/
+vendor/
+
+# Obsidian
+.obsidian/
+
+# Sass cache
+.sass-cache/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node modules (if using)
+node_modules/
+
+# Logs
+*.log
