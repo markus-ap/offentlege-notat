@@ -1,0 +1,48 @@
+title: Offentlege Notat
+email: your-email@example.com
+description: >-
+  Notat av Markus som er tilgjengeleg offentleg. 
+  Public notes from developer conferences and learning sessions.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+# Collections for notes
+collections:
+  notes:
+    output: true
+    permalink: /:collection/:name/
+
+# Kramdown settings for better Obsidian compatibility
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+
+# Custom settings for Obsidian-like features
+wikilinks: true
+
+# Exclude files from processing
+exclude:
+  - .obsidian/
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
